@@ -1,0 +1,29 @@
+{
+  "siteName": {
+    "value": "knowyourseller"
+  },
+  "hostingPlanName": {
+    "value": "knowyourseller"
+  },
+  "siteLocation": {
+    "value": "Southeast Asia"
+  },
+  "sku": {
+    "value": "Free"
+  },
+  "workerSize": {
+    "value": "0"
+  },
+  "siteMode": {
+    "value": "Limited"
+  },
+  "computeMode": {
+    "value": "0"
+  },
+  "subscriptionId": {
+    "value": "767a3bc2-3069-48f3-8cc1-056a7d43769e"
+  },
+  "resourceGroup": {
+    "value": "Default-SQL-SoutheastAsia"
+  }
+}

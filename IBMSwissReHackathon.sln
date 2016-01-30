@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBMSwissReHackathon", "IBMSwissReHackathon\IBMSwissReHackathon.csproj", "{7754DBC3-C261-4DE4-98DD-E6EDB0A5BB01}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{4AA09434-5B3A-48A3-A792-C93095C66BA9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{E747D0F9-1ECC-48EB-A803-50024F58A4C8}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{96A9AD79-8ABC-4522-BE22-84A415A9B10E}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\IBMSwissReHackathon.json = PublishScripts\Templates\IBMSwissReHackathon.json
+		PublishScripts\Templates\IBMSwissReHackathon.param.dev.json = PublishScripts\Templates\IBMSwissReHackathon.param.dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7754DBC3-C261-4DE4-98DD-E6EDB0A5BB01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7754DBC3-C261-4DE4-98DD-E6EDB0A5BB01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7754DBC3-C261-4DE4-98DD-E6EDB0A5BB01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7754DBC3-C261-4DE4-98DD-E6EDB0A5BB01}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E747D0F9-1ECC-48EB-A803-50024F58A4C8} = {4AA09434-5B3A-48A3-A792-C93095C66BA9}
+		{96A9AD79-8ABC-4522-BE22-84A415A9B10E} = {4AA09434-5B3A-48A3-A792-C93095C66BA9}
+	EndGlobalSection
+EndGlobal
