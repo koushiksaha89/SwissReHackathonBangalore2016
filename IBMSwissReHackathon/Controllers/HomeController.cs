@@ -12,6 +12,7 @@ namespace IBMSwissReHackathon.Controllers
         public ActionResult Index()
         {
             var twitterdata=TwitterDataGather.GetData();
+            var alchemydata = AlchemyDataNewsApiDataGather.GetPositiveData();
             return View();
         }
 

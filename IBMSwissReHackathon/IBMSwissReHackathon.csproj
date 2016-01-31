@@ -117,6 +117,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlchemyDataNewsAPI\AlchemyDataNewsAPIMainClass.cs" />
+    <Compile Include="AlchemyDataNewsAPI\AlchemyDataNewsKnowMySeller.cs" />
+    <Compile Include="AlchemyDataNewsAPI\Concept.cs" />
+    <Compile Include="AlchemyDataNewsAPI\Doc.cs" />
+    <Compile Include="AlchemyDataNewsAPI\Enriched.cs" />
+    <Compile Include="AlchemyDataNewsAPI\EnrichedTitle.cs" />
+    <Compile Include="AlchemyDataNewsAPI\KnowledgeGraph.cs" />
+    <Compile Include="AlchemyDataNewsAPI\Result.cs" />
+    <Compile Include="AlchemyDataNewsAPI\Source.cs" />
+    <Compile Include="AlchemyDataNewsAPI\Url.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
