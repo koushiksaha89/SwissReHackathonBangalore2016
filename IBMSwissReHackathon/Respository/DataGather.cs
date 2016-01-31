@@ -22,7 +22,7 @@ namespace IBMSwissReHackathon.Respository
             {
                 TwitterApiMainClass r = new TwitterApiMainClass();
                 string jsondata = null;
-                WebRequest req = WebRequest.Create(@"https://cdeservice.mybluemix.net:443/api/v1/messages/search?q=%23wsretail&size=5");
+                WebRequest req = WebRequest.Create(@"https://cdeservice.mybluemix.net:443/api/v1/messages/search?q=%23wsretail&size=50");
                 req.Method = "GET";
                 req.Headers["Authorization"] = "Basic " + Convert.ToBase64String(Encoding.Default.GetBytes("8620faa4-71a5-4ae9-9678-e7a17057649e:hZpz4E1nvh"));
                 req.Credentials = new NetworkCredential("8620faa4-71a5-4ae9-9678-e7a17057649e", "hZpz4E1nvh");

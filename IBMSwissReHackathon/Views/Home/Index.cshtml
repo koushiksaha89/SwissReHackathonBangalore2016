@@ -15,19 +15,27 @@
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="~/Content/animate.min.css" type="text/css">
     <link rel="stylesheet" href="~/Content/jquery-ui.css" type="text/css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="~/Content/creative.css" type="text/css">
+
     <title>Know your seller</title>
 </head>
 <body id="page-top">
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="row">
+            <div class="col-md-1">
+                <button class="btn btn-lg btn-primary btn-block" style="width: 150px;" type="button"><a href="#detailedView">DetailedView</a></button></div>
+            <div class="col-md-1"><button class="btn btn-lg btn-primary btn-block" style="width: 150px;" type="button"><a href="#newsdatadiv">TrendChart</a></button></div>
+
+            </div>
 
     </nav>
     <header>
         <div class="header-content">
 
             <div class="header-content-inner">
-
+                
                 <div class="row-fluid">
                     <div class="span4">
 
@@ -40,7 +48,7 @@
                                         <input id="vendorName" type="text" class="form-control" name="vendorName" placeholder="Enter Vendor Name" required="" autofocus="" />
                                     </div>
                                     <br />
-                                    <button id="analyzeBtn" class="btn btn-lg btn-primary btn-block" style="width: 150px;" type="submit">Analyze</button>
+                                    <button id="analyzeBtn" class="btn btn-lg btn-primary btn-block" style="width: 150px;" type="button">Analyze</button>
                                 </center>
                             </form>
                         </div>
@@ -51,7 +59,27 @@
             </div>
 
         </div>
+        <div id="container">
+            <div class="row">
+                    <div class="col-md-4">
+                    <div id="positivedatadiv"></div>
+                        </div>
+                <div class="col-md-4">
+                    <div id="neutraldatadiv"></div>
+                    </div>
+                <div class="col-md-4">
+                    <div id="negativedatadiv"></div>
+                    </div>
+             </div>
+            </div>
     </header>
+    <section id="detailedView">
+            <div class="row">
+            <center><div id="twitterdatadiv"></div></center>
+            </div>
+    </section>
+    <center><h3><a href="#newsdatadiv" style="color:black">News Sentiment Description</a></h3></center>
+    <section id="newsdatadiv"></section>
 
     <!-- jQuery -->
     <script src="~/Scripts/jquery.js"></script>

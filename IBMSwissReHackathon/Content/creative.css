@@ -25,7 +25,7 @@ hr.light {
 }
 
 a {
-    color: #f05f40;
+    color: white;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -66,6 +66,13 @@ p {
 
 section {
     padding: 100px 0;
+    height:inherit;
+    position: relative;
+    min-height: auto;
+    text-align: center;
+    color: #fff;
+    background-color:cornflowerblue;
+    
 }
 
 aside {
@@ -171,6 +178,18 @@ aside {
         color: #f05f40;
     }
 }
+#container
+{
+        padding-top: 300px;
+    padding-left: 100px;
+    color:red;
+}
+
+#mainNav a
+{
+    color:black;
+}
+
 
 header {
     position: relative;

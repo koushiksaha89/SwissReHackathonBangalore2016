@@ -29,5 +29,32 @@ namespace IBMSwissReHackathon.Controllers
 
             return View();
         }
+        [HttpGet]
+        public ActionResult TwitterAPIData()
+        {
+            var twitterdata = TwitterDataGather.GetData();
+            //var twitterdata = string.Empty;
+            // var alchemydata = AlchemyDataNewsApiDataGather.GetPositiveData();
+            return Json(twitterdata, JsonRequestBehavior.AllowGet);
+        }
+
+        [HttpGet]
+        public ActionResult AlchemyAPIPositiveData()
+        {
+            var alchemydata = AlchemyDataNewsApiDataGather.GetPositiveData();
+            return Json(alchemydata, JsonRequestBehavior.AllowGet);
+        }
+        [HttpGet]
+        public ActionResult AlchemyAPINegativeeData()
+        {
+            var alchemydata = AlchemyDataNewsApiDataGather.GetNegativeData();
+            return Json(alchemydata, JsonRequestBehavior.AllowGet);
+        }
+        [HttpGet]
+        public ActionResult AlchemyAPINeutralData()
+        {
+            var alchemydata = AlchemyDataNewsApiDataGather.GetNeutralData();
+            return Json(alchemydata, JsonRequestBehavior.AllowGet);
+        }
     }
 }
